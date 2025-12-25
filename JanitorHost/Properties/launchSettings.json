@@ -1,0 +1,18 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5073",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "PlexUrl": "http://mediaserver:32400",
+        "PlexToken": "uw49uXSJxFP3iC3HDpLJ",
+        "SonarrUrl": "http://mediaserver:8989",
+        "SonarrApiKey": "68e33de3431e4a818f608508b2ce26b9"
+      }
+    }
+  }
+}
