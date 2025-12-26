@@ -13,7 +13,7 @@ public class SonarrClientFactory
     public SonarrClientFactory(HttpClient httpClient, IOptions<JanitorConfig> janitorConfig)
     {
         _authenticationProvider = new HttpApiKeyAuthentication(
-            janitorConfig.Value.SONAR_API_KEY!,
+            janitorConfig.Value.SONARR_API_KEY!,
             "X-Api-Key",
             HttpApiKeyAuthentication.KeyLocation.Header
         );

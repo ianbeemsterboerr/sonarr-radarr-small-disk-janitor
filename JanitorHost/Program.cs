@@ -21,12 +21,16 @@ public class Program
         {
             var client = new ApplicationJsonAcceptSetter(new SpeakeasyHttpClient());
             PlexAPI.SDKBuilder plexSdkBuilder = new PlexAPI.SDKBuilder();
+
             var config = s.GetRequiredService<IOptions<JanitorConfig>>().Value;
+
+            var plexUri = new Uri(config.PLEX_URL);
+
             plexSdkBuilder
                 .WithToken(config.PLEX_TOKEN)
-                .WithProtocol("http")
-                .WithHost("mediaserver")
-                .WithPort("32400")
+                .WithHost(plexUri.Host)
+                .WithPort(plexUri.Port.ToString())
+                .WithProtocol(plexUri.Scheme)
                 .WithServerIndex(1)
                 .WithAccepts(LukeHagar.PlexAPI.SDK.Models.Components.Accepts.ApplicationJson)
                 .WithClient(client);
