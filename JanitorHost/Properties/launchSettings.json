@@ -8,11 +8,10 @@
       "applicationUrl": "http://localhost:5073",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "PlexUrl": "http://mediaserver:32400",
-        "PlexToken": "uw49uXSJxFP3iC3HDpLJ",
-        "SonarrUrl": "http://mediaserver:8989",
-        "SonarrApiKey": "68e33de3431e4a818f608508b2ce26b9",
-        "ScanFrequencyMinutes": "1"
+        "PLEX_URL": "http://mediaserver:32400",
+        "PLEX_TOKEN": "uw49uXSJxFP3iC3HDpLJ",
+        "SONARR_URL": "http://mediaserver:8989",
+        "SONARR_API_KEY": "68e33de3431e4a818f608508b2ce26b9"
       }
     }
   }

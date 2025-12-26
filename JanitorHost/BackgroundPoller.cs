@@ -27,7 +27,7 @@ public class BackgroundPoller(
             await sonarrService.DeleteWatchedEpisodes(shows);
 
             await Task.Delay(
-                TimeSpan.FromMinutes(janitorConfig.Value.ScanFrequencyMinutes),
+                TimeSpan.FromMinutes(janitorConfig.Value.SCAN_FREQUENCY_MINUTES),
                 cancellationToken
             );
         }

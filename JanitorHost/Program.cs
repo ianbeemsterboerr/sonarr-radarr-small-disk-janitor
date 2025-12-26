@@ -23,7 +23,7 @@ public class Program
             PlexAPI.SDKBuilder plexSdkBuilder = new PlexAPI.SDKBuilder();
             var config = s.GetRequiredService<IOptions<JanitorConfig>>().Value;
             plexSdkBuilder
-                .WithToken(config.PlexToken)
+                .WithToken(config.PLEX_TOKEN)
                 .WithProtocol("http")
                 .WithHost("mediaserver")
                 .WithPort("32400")

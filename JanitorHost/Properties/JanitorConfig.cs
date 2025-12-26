@@ -2,8 +2,8 @@
 
 public class JanitorConfig
 {
-    public string? SonarrUrl { get; set; }
-    public string? SonarrApiKey { get; set; }
-    public required string PlexToken { get; set; }
-    public int ScanFrequencyMinutes { get; set; } = 5;
+    public string? SONARR_URL { get; set; }
+    public string? SONAR_API_KEY { get; set; }
+    public required string PLEX_TOKEN { get; set; }
+    public int SCAN_FREQUENCY_MINUTES { get; set; } = 5;
 }
