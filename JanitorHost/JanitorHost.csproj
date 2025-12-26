@@ -12,6 +12,13 @@
     <ContainerImageTag>$(GITHUB_REF_NAME)</ContainerImageTag>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <ContainerEnvironmentVariable Include="PLEX_URL" />
+    <ContainerEnvironmentVariable Include="PLEX_TOKEN" />
+    <ContainerEnvironmentVariable Include="SONARR_URL" />
+    <ContainerEnvironmentVariable Include="SONARR_API_KEY" />
+  </PropertyGroup>
+
   <ItemGroup>
     <Content Include="..\.dockerignore">
       <Link>.dockerignore</Link>
