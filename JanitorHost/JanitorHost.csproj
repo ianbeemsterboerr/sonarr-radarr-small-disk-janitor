@@ -6,6 +6,12 @@
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <ContainerRegistry>registry.hub.docker.com</ContainerRegistry>
+    <ContainerImageName>beemstation/plex-janitor</ContainerImageName>
+    <ContainerImageTag>$(GITHUB_REF_NAME)</ContainerImageTag>
+  </PropertyGroup>
+
   <ItemGroup>
     <Content Include="..\.dockerignore">
       <Link>.dockerignore</Link>
