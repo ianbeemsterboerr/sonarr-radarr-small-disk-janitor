@@ -29,6 +29,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: ./JanitorHost/
+          context: .
+          file: ./JanitorHost/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/plex-janitor:${{ steps.tag.outputs.tag }}
